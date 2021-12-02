@@ -301,6 +301,11 @@ button:hover{
     animation-iteration-count:infinite;
     animation-direction:alternate;
 }
+@keyframes shake{
+  from{transform: rotate(100deg);}
+  to{transform:rotate(0deg);}
+}
+
 @media only screen and (max-width: 35em) {
   .panel4{
     padding: 32px;
@@ -403,7 +408,16 @@ button:hover{
   justify-self: start;
   font-size: 50px;
   color: #FF77A9;
+  animation-name: test;
+  animation-duration: 3s;
 }
+
+@keyframes test{
+  from{transform: translateX(-20px)};
+  to{transform: translateX(20px)};
+}
+
+
 
 @media only screen and (max-width: 35em) {
   .panel6{
@@ -417,6 +431,7 @@ button:hover{
   .panel6 h1{
     writing-mode: horizontal-tb;
   }
+
 
   .questions{
     grid-column: 1;
@@ -489,7 +504,12 @@ button:hover{
 /*******************************************/
 /*******************panel 8********************/
 .panel8{
+  display: grid;
   padding: 64px;
+  animation-name: test;
+  animation-duration: 3s;
+  align-content: center;
+  justify-content: center;
 }
 
 form{
@@ -501,6 +521,7 @@ form{
 }
 
 .form-input{
+
 }
 
 @media only screen and (max-width: 35em) {
