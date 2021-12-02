@@ -89,6 +89,8 @@ textarea {
 main{
   font-family: rustica, sans-serif;
   margin: 0;
+  overflow: hidden; !important
+  width: 100vw;!important
 }
 
 body{
@@ -123,40 +125,62 @@ button:hover{
   justify-items: center;
   color: #000063;
   overflow: hidden;
-  position: relative;
   background: #000 center/cover url(../img/bg-header-01.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .panel1 h1{
-  align-self: center;
-  justify-self: center;
+  align-self: right;
+  justify-self: right;
   font-weight: 600px;
-  font-size: 100px;
+  font-size: 90px;
+  z-index: 2;
+  color: white;
+  background: none;
+  padding: 40px 10px 20px 10px;
+  text-align: right;
+  grid-area: 2/2;
 }
 
 .panel1 span{
   display: block;
   font-weight: 200;
   font-size: 50px;
-  text-align: center;
+  text-align: right;
 }
 
+.logo{
+  align-self: baseline;
+  justify-self: left;
+}
 .logo img{
-  height: 20rem;
-  align-self: center;
+  height: 10rem;
+  grid-area: 1/2;
 }
 
+.bar{
+  overflow: hidden;
+}
 .bar img{
   position: absolute;
-  left: -4rem;
-  top: 60px;
-  height: 70rem;
+  right: 6rem;
+  top: -200px;
+  height: 30rem;
+  animation: rotate 9s infinite;
+  z-index:1;
+  grid-area: 1 / 2;
+  overflow: hidden;
+}
+
+@keyframes rotate{
+  from{transform: rotate(0deg);transform-origin: 50% 50%;}
+  to{transform:rotate(360deg);}
 }
 
 .buttons{
   display: grid;
+  align-content: bottom;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 32px;
   font-size: 20px;
@@ -188,7 +212,7 @@ button:hover{
     height: 20rem;
     top: -120px;
     left: 2rem;
-    z-index: -1;
+    z-index: -11;
   }
 
   .buttons{
@@ -521,7 +545,13 @@ form{
 }
 
 .form-input{
+  padding: 8px;
+}
 
+input{
+  padding: 8px;
+  width: 80%;
+  border:#EC407A solid 2px;
 }
 
 @media only screen and (max-width: 35em) {
