@@ -151,10 +151,17 @@ button:hover{
 .bar img{
   position: absolute;
   left: -4rem;
-  top: 60px;
-  height: 70rem;
+  bottom: -170px;
+  height: 40rem;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 
+@keyframes rotate{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
 .buttons{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -185,10 +192,11 @@ button:hover{
   }
 
   .bar img{
-    height: 0rem;
-    top: -120px;
-    left: 2rem;
-    z-index: -1;
+    height: 15rem;
+    top: -8rem;
+    left: 4rem;
+    bottom: 0;
+    right: 0;
   }
 
   .buttons{
@@ -489,18 +497,27 @@ button:hover{
 /*******************************************/
 /*******************panel 8********************/
 .panel8{
-  padding: 64px;
+  display: grid;
+  padding: 32px;
+  justify-content: center;
+  align-content: center;
 }
 
 form{
-
+  width: 100%;
 }
 .panel8 h1{
   display: inline;
 
 }
 
+input{
+  border: 2px solid #EC407A;
+  padding: 8px;
+}
 .form-input{
+  width: 100%;
+
 }
 
 @media only screen and (max-width: 35em) {
