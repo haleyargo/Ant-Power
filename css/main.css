@@ -89,8 +89,6 @@ textarea {
 main{
   font-family: rustica, sans-serif;
   margin: 0;
-  overflow: hidden; !important
-  width: 100vw;!important
 }
 
 body{
@@ -125,62 +123,40 @@ button:hover{
   justify-items: center;
   color: #000063;
   overflow: hidden;
+  position: relative;
   background: #000 center/cover url(../img/bg-header-01.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .panel1 h1{
-  align-self: right;
-  justify-self: right;
+  align-self: center;
+  justify-self: center;
   font-weight: 600px;
-  font-size: 90px;
-  z-index: 2;
-  color: white;
-  background: none;
-  padding: 40px 10px 20px 10px;
-  text-align: right;
-  grid-area: 2/2;
+  font-size: 100px;
 }
 
 .panel1 span{
   display: block;
   font-weight: 200;
   font-size: 50px;
-  text-align: right;
+  text-align: center;
 }
 
-.logo{
-  align-self: baseline;
-  justify-self: left;
-}
 .logo img{
-  height: 10rem;
-  grid-area: 1/2;
+  height: 20rem;
+  align-self: center;
 }
 
-.bar{
-  overflow: hidden;
-}
 .bar img{
   position: absolute;
-  right: 6rem;
-  top: -200px;
-  height: 30rem;
-  animation: rotate 9s infinite;
-  z-index:1;
-  grid-area: 1 / 2;
-  overflow: hidden;
-}
-
-@keyframes rotate{
-  from{transform: rotate(0deg);transform-origin: 50% 50%;}
-  to{transform:rotate(360deg);}
+  left: -4rem;
+  top: 60px;
+  height: 70rem;
 }
 
 .buttons{
   display: grid;
-  align-content: bottom;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 32px;
   font-size: 20px;
@@ -209,10 +185,10 @@ button:hover{
   }
 
   .bar img{
-    height: 20rem;
+    height: 0rem;
     top: -120px;
     left: 2rem;
-    z-index: -11;
+    z-index: -1;
   }
 
   .buttons{
@@ -325,11 +301,6 @@ button:hover{
     animation-iteration-count:infinite;
     animation-direction:alternate;
 }
-@keyframes shake{
-  from{transform: rotate(100deg);}
-  to{transform:rotate(0deg);}
-}
-
 @media only screen and (max-width: 35em) {
   .panel4{
     padding: 32px;
@@ -432,16 +403,7 @@ button:hover{
   justify-self: start;
   font-size: 50px;
   color: #FF77A9;
-  animation-name: test;
-  animation-duration: 3s;
 }
-
-@keyframes test{
-  from{transform: translateX(-20px)};
-  to{transform: translateX(20px)};
-}
-
-
 
 @media only screen and (max-width: 35em) {
   .panel6{
@@ -455,7 +417,6 @@ button:hover{
   .panel6 h1{
     writing-mode: horizontal-tb;
   }
-
 
   .questions{
     grid-column: 1;
@@ -528,12 +489,7 @@ button:hover{
 /*******************************************/
 /*******************panel 8********************/
 .panel8{
-  display: grid;
   padding: 64px;
-  animation-name: test;
-  animation-duration: 3s;
-  align-content: center;
-  justify-content: center;
 }
 
 form{
@@ -545,13 +501,6 @@ form{
 }
 
 .form-input{
-  padding: 8px;
-}
-
-input{
-  padding: 8px;
-  width: 80%;
-  border:#EC407A solid 2px;
 }
 
 @media only screen and (max-width: 35em) {
