@@ -112,6 +112,10 @@ button:hover{
   color: white;
 }
 
+a{
+  text-decoration: none;
+}
+
 /*******************panel 1********************/
 .panel1{
   height: 100vh;
@@ -376,12 +380,12 @@ button:hover{
 /*******************panel 6********************/
 .panel6{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
   grid-template-rows: 1fr;
   padding: 64px;
-  margin: 0;
-  height: 80vh;
-  border: pink 2px solid;
+  margin: 100px;
+  height: 70vh;
+  border: #FF77A9 4px solid;
 }
 
 .question{
@@ -389,25 +393,12 @@ button:hover{
   grid-template-columns: 100%;
   grid-template-rows: 1fr 2fr;
   line-height: 50px;
-  padding: 100px 0px;
+  padding: 10px;
 
 }
 
 .question p{
-}
-.questions{
-  grid-column: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-column-gap: 32px;
-  padding: 200px 100px;
-  border-style: solid;
-  border-color: #FF77A9;
-  border-width: 4px;
-  height: 20vh;
-  align-content: center;
-  justify-self: center;
+  padding-right: 20px;
 }
 
 .question h2{
@@ -474,12 +465,14 @@ button:hover{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 20% 80%;
-  grid-gap: 32px;
+  grid-gap: 64px;
+  height: 75vh;
 }
 
 .panel7 h3 {
   grid-column: 1 / span 3;
   grid-row: 1;
+  font-size: 30px;
 }
 
 .svgs{
@@ -489,6 +482,7 @@ button:hover{
   align-items: center;
   justify-items: center;
   height: 150px;
+  grid-gap: 100px;
 }
 
 .svgs i{
@@ -514,10 +508,10 @@ button:hover{
 /*******************panel 8********************/
 .panel8{
   display: grid;
-  padding: 32px;
+  padding: 64px;
   justify-content: center;
   align-content: center;
-  height: 32vh;
+  height: 50vh;
 }
 
 form{

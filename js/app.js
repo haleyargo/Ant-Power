@@ -15,3 +15,13 @@ $('form').submit(function(e){
     $('.form-input').addClass('hide');
   }
 })
+
+$('a').click(function(event){
+  event.preventDefault();
+  let target = $(this).attr('href');
+  let top = $(target).offset().top;
+  $('html,body').animate({
+    scrollTop: top
+    },800);
+
+});
