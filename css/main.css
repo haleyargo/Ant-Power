@@ -376,24 +376,41 @@ button:hover{
 /*******************panel 6********************/
 .panel6{
   display: grid;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   padding: 64px;
+  margin: 0;
+  height: 80vh;
+  border: pink 2px solid;
 }
 
+.question{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 2fr;
+  line-height: 50px;
+  padding: 100px 0px;
+
+}
+
+.question p{
+}
 .questions{
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-column-gap: 32px;
-  padding: 32px;
+  padding: 200px 100px;
   border-style: solid;
   border-color: #FF77A9;
   border-width: 4px;
+  height: 20vh;
+  align-content: center;
+  justify-self: center;
 }
 
-.questions h2{
+.question h2{
   font-family: ocr-a-std, monospace;
   font-weight: 400;
   font-style: normal;
@@ -500,6 +517,7 @@ button:hover{
   padding: 32px;
   justify-content: center;
   align-content: center;
+  height: 32vh;
 }
 
 form{
