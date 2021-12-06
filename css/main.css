@@ -305,9 +305,8 @@ button:hover{
 
 .panel4 img{
     animation-name: shake;
-    animation-duration:3s;
+    animation-duration:20s;
     animation-iteration-count:infinite;
-    animation-direction:alternate;
 }
 @media only screen and (max-width: 35em) {
   .panel4{
@@ -587,7 +586,7 @@ input{
 
 
 @keyframes shake{
-  from{transform: rotate(100deg);}
+  from{transform: rotate(360deg);}
   to{transform:rotate(0deg);}
 }
 
