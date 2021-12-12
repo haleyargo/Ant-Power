@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
 
   <meta name="theme-color" content="#fafafa">
   <script src="https://kit.fontawesome.com/71b904c59f.js" crossorigin="anonymous"></script>
@@ -32,7 +33,10 @@
   <img src="img/logo.png"alt="logo" height="200"/>
 </div>
 <div class="bar">
-  <img src="img/bar.png"alt="bar" height="200"/>
+  <img src="img/bar.png"alt="bar" height="200"data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="2000"/>
 </div>
 <div class="buttons">
 <button><a href="#shop">Shop</a></button>
@@ -51,7 +55,8 @@
     <p></p>
     <img src="img/adam-littman-davis-mTFJoZN6AWA-unsplash.jpg" alt="photo by Adam Littman"/>
   </div>
-<div class = "how">
+
+<div class = "how" data-aos="fade-up" data-aos-duration="3000">
   <h3>How do we do it ?</h3>
   <p>Strength, teamwork, determination,
 and only the highest quality ingredients.</p>
@@ -59,7 +64,7 @@ and only the highest quality ingredients.</p>
 </div>
 </section>
 
-<div class = "panel4">
+<div class = "panel4"data-aos="fade-up" data-aos-duration="3000">
   <img src="img/healthinfo-01.png"alt="apple" height="200"/>
   <img src="img/healthinfo-02.png"alt="oat" height="200"/>
   <img src="img/healthinfo-03.png"alt="no" height="200"/>
@@ -69,15 +74,16 @@ and only the highest quality ingredients.</p>
 
 <section class = "panel5">
   <div class="quoteimage">
-    <img src="img/james-wainscoat-0Ja1g9HKGSk-unsplash.jpg" alt="photo by James Wainscoat"/>
+    <img src="img/james-wainscoat-0Ja1g9HKGSk-unsplash.jpg" alt="photo by James Wainscoat" data-aos="fade-up" data-aos-duration="3000"/>
   </div>
-  <div class="quote">
+  <div class="quote" data-aos="fade-up" data-aos-duration="3000">
   <p>“All good work is done the way ants do things:
 Little by little.”<span>-Lafcadio Hearn</span></p>
 </div>
 </section>
 
-<section class = "panel6" id="about">
+
+<section class = "panel6" id="about" data-aos="fade-up" data-aos-duration="3000">
   <h1>F A Q</h1>
   <div class = "question 1">
     <h2>Is Ant Power Vegan?</h2>
@@ -101,14 +107,14 @@ Little by little.”<span>-Lafcadio Hearn</span></p>
 </section>
 
 <section class = "panel7" id="shop">
-  <h3>You can find us at...</h3>
+  <h3 data-aos="fade-up" data-aos-duration="4000">You can find us at...</h3>
   <div class="svgs">
-  <i class="fab fa-amazon"></i>
-  <img src="img/Walmart_logo.svg"alt="walmart" height="50"/>
-  <img src="img/Target_logo.svg"alt="target" height="100"/>
-  <img src="img/cumbies.svg" alt="cumbies"height="100"/>
-  <img src="img/dollar.svg" alt="dollar"height="40"/>
-  <img src="img/stopnshop.svg" alt="stp"height="80"/>
+  <i class="fab fa-amazon" data-aos="fade-up" data-aos-duration="1000"></i>
+  <img src="img/Walmart_logo.svg"alt="walmart" height="50" data-aos="fade-up" data-aos-duration="2000"/>
+  <img src="img/Target_logo.svg"alt="target" height="100" data-aos="fade-up" data-aos-duration="3000"/>
+  <img src="img/cumbies.svg" alt="cumbies"height="100" data-aos="fade-up" data-aos-duration="1000"/>
+  <img src="img/dollar.svg" alt="dollar"height="40"data-aos="fade-up" data-aos-duration="2000"/>
+  <img src="img/stopnshop.svg" alt="stp"height="80"data-aos="fade-up" data-aos-duration="3000"/>
 </div>
 </section>
 
@@ -116,8 +122,8 @@ Little by little.”<span>-Lafcadio Hearn</span></p>
 <div class = "panel8" id="contact">
     <!-- Email Form -->
   <form>
-    <div class="form-input">
-      <h1>Join the colony:</h1>
+    <div class="form-input" data-aos="fade-up" data-aos-duration="2000">
+      <h1>Join the colony</h1>
       <label for="email">Enter your email: </label>
       <input type="email" name="email" id="email" value="Email">
       <button>Subscribe!</button>
@@ -142,6 +148,7 @@ Little by little.”<span>-Lafcadio Hearn</span></p>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
   <script src="js/app.js"></script>
 </main>
 </body>

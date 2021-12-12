@@ -25,3 +25,5 @@ $('a').click(function(event){
     },800);
 
 });
+
+AOS.init();

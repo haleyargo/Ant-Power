@@ -157,15 +157,8 @@ a{
   left: -4rem;
   bottom: -170px;
   height: 40rem;
-  animation-name: rotate;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
 }
 
-@keyframes rotate{
-  from{transform: rotate(0deg);}
-  to{transform: rotate(360deg);}
-}
 .buttons{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -220,7 +213,7 @@ a{
   color: white;
 }
 
-.panel2 h3{
+.panel2 h2, .panel2 h3{
   font-weight: 200;
 }
 @media only screen and (max-width: 35em) {
@@ -254,7 +247,7 @@ a{
   max-width: 100%;
   position: absolute;
   left: 0;
-  top: -20px;
+  top: -20px; 
   box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -344,6 +337,7 @@ a{
   font-style: normal;
   font-size: 20px;
   grid-column: 1;
+  padding-left: 100px;
 }
 
 .quoteimage img{
@@ -394,7 +388,6 @@ a{
   grid-template-rows: 1fr 2fr;
   line-height: 50px;
   padding: 10px;
-
 }
 
 .question p{
@@ -422,36 +415,57 @@ a{
 
 @media only screen and (max-width: 35em) {
   .panel6{
-    grid-template-columns: 100%;
-    padding: 32px;
-    justify-content: center;
-    align-content: center;
-    grid-gap: 10px;
-  }
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+  padding: 32px;
+  margin: 16px;
+  height: 100vh;
+  border: #FF77A9 4px solid;
+  grid-gap: 0;
+}
+.panel6 h1{
+  grid-column: 1;
+  writing-mode: vertical-rl;
+  font-family: ocr-a-std, monospace;
+  font-weight: 400;
+  font-style: normal;
+  align-self: center;
+  justify-self: start;
+  font-size: 30px;
+  color: #FF77A9;
+}
+
+.question p{
+  padding-right: 0;
+  line-height: 2;
+  padding: 0;
+}
+
+.question h2{
+  font-family: ocr-a-std, monospace;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  color: #311B92;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2;
+}
 
   .panel6 h1{
     writing-mode: horizontal-tb;
   }
 
-  .questions{
-    grid-column: 1;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(6, 1fr);
+  .question{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 0;
-    padding: 16px;
+    height: 100%;
+    padding: 0;
   }
 
-  .vegan{
-    grid-row: 1;
-  }
-
-  .sustain{
-    grid-row: 3;
-  }
-
-  .allergy{
-    grid-row: 5;
-  }
 }
 /*******************************************/
 /*******************panel 7********************/
@@ -512,25 +526,30 @@ a{
   justify-content: center;
   align-content: center;
   height: 50vh;
+  background:center/cover no-repeat url(../img/nicholas-beel-69n54RVh4tE-unsplash.jpg);
+
 }
 
 form{
   width: 100%;
 }
 .panel8 h1{
-  display: inline;
-
+  display: block;
 }
 
 input{
-  border: 2px solid #EC407A;
+  border: 2px solid white;
   padding: 8px;
 }
 .form-input{
   width: 100%;
-
+  color: white;
 }
 
+.panel8 button{
+  color: white;
+  border: solid 2px white;
+}
 @media only screen and (max-width: 35em) {
   .panel8{
     padding: 16px;
@@ -601,7 +620,6 @@ input{
   from{transform: rotate(360deg);}
   to{transform:rotate(0deg);}
 }
-
 
 /* ==========================================================================
    Helper classes
