@@ -364,10 +364,16 @@ a{
   }
 
   .panel5{
+    display: block;
+    padding: none;
     grid-template-columns: 100%;
 }
-  .quoteimage{
+  .quoteimage img{
     display: none;
+  }
+
+  .quote{
+    padding-left: 0;
   }
 }
 /*******************************************/
@@ -419,7 +425,7 @@ a{
   grid-template-columns: 100%;
   grid-template-rows: 1fr;
   padding: 32px;
-  margin: 16px;
+  margin: 8px;
   height: 100vh;
   border: #FF77A9 4px solid;
   grid-gap: 0;
@@ -459,10 +465,8 @@ a{
   }
 
   .question{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+
     grid-gap: 0;
-    height: 100%;
     padding: 0;
   }
 
@@ -478,19 +482,17 @@ a{
   padding: 64px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 1fr;
   grid-gap: 64px;
   height: 75vh;
 }
 
 .panel7 h3 {
   grid-column: 1 / span 3;
-  grid-row: 1;
   font-size: 30px;
 }
 
 .svgs{
-  grid-row: 2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -504,19 +506,39 @@ a{
 }
 
 @media only screen and (max-width: 35em) {
-  .svgs{
-    grid-gap: 20px;
-  }
-  .svgs i{
-  font-size: 40px;
-}
 
 .panel7{
-  grid-template-columns: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0;
+  padding: 8px;
+  height: 100vh;
+}
+
+.panel7 h3{
+  grid-column: 1;
+  font-size: 20px;
+  padding: 16px;
 }
 .panel7 img{
-  height: 40px;
 }
+
+ .svgs{
+  grid-column: 1;
+  grid-row: 1;
+    display: grid;
+    grid-gap: 0;
+    grid-row-gap: 32px;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 10vh;
+    padding: 16px;
+  }
+  .svgs i{
+  font-size: 80px;
+}
+
 }
 /*******************************************/
 /*******************panel 8********************/
